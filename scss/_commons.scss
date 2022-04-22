@@ -1,0 +1,62 @@
+//variables
+
+$mainColor:#5EBDAA;
+
+//sizing
+
+$w-25:25%;
+$w-50:50%;
+$w-15:15%;
+
+.teamLogo{
+	
+	max-width: 40px;
+    max-height: 40px;
+    width: auto;
+    height: auto;
+}
+
+$cv: #231a24;
+$w: white;
+
+$paleta:(
+	'uno':#5EBDAA,
+	'dos':#5a4894,
+	'tres':#D7D29C,
+	'cuatro':#231a24,
+	'cinco':white,
+	'seis':#000000,
+	);
+
+.bg-celeste{
+	background-color: map-get($map:$paleta,$key:'uno');
+}
+
+.bg-morado{
+	background-color: map-get($map:$paleta,$key:'dos');
+}
+
+.bg-morado-dark{
+	background-color: map-get($map:$paleta,$key:'cuatro');
+}
+
+.bg-negro{
+	background-color: map-get($map:$paleta,$key:'seis');
+}
+
+@mixin texto ($font-size,$color){
+font-size: $font-size;
+color: $color;
+padding: 4px 20 px;
+
+}
+
+p{@include texto(1em,white)}
+
+h5{@include texto(1.6em,#D7D29C)}
+
+.LNot{
+	text-decoration: none;
+}
+
+
